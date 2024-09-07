@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Try it with Trieve!",
+  "version": "1.0",
+  "description": "Adds a button to try it with Trieve on specific websites",
+  "icons": {
+    "16": "images/trieve_logo_16.png",
+    "48": "images/trieve_logo_48.png",
+    "128": "images/trieve_logo_128.png"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://hn.algolia.com/*"],
+      "js": ["js/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["css/styles.css", "images/*"],
+      "matches": ["https://hn.algolia.com/*"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

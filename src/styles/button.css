@@ -1,0 +1,64 @@
+.trieve-button {
+  position: absolute;
+  top: 4rem;
+  right: 35%;
+  transform: translateX(50%);
+  background-color: rgb(253 244 255);
+  color: rgb(217 70 239);
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgb(217 70 239);
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-family: "Inter Variable", sans-serif;
+}
+
+.trieve-button:hover {
+  background-color: rgba(245, 208, 254);
+}
+
+.tooltip-container {
+  position: absolute;
+  top: 7rem;
+  right: 35%;
+  z-index: 10000;
+}
+
+.trieve-tooltip {
+  background-color: rgba(245, 208, 254);
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 11px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+.trieve-tooltip h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 13px;
+  max-width: 280px;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trieve-tooltip ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.trieve-tooltip li {
+  margin-bottom: 5px;
+}
